@@ -6,8 +6,8 @@ dist/
 
 # Environment
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
 
 # IDE
 .vscode/
@@ -23,8 +23,19 @@ Thumbs.db
 *.log
 npm-debug.log*
 
-# Test
+# Test / coverage
 coverage/
 
-# Generated
+# Generated NPM artifacts
+*.tgz
+
+# Generated scaffold / test projects
 test-api/
+audit-test-api/
+my-api/
+final-api/
+final-npm-test/
+npm-registry-test/
+
+# Generated CLI project
+packages/create-backend/my-api/
