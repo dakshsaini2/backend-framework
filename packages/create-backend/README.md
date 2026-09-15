@@ -2,6 +2,23 @@
 
 CLI to generate production-ready TypeScript backend projects with Express, Prisma, PostgreSQL, and JWT authentication.
 
+## Generation Flow
+
+```mermaid
+sequenceDiagram
+    participant D as Developer
+    participant CLI as create-dk-backend
+    participant FS as File System
+    
+    D->>CLI: npx create-dk-backend my-api
+    CLI->>FS: Validate project name
+    CLI->>FS: Check directory collision
+    CLI->>FS: Copy template files
+    CLI->>FS: Rewrite package.json
+    CLI->>FS: Rename dotfiles (.env, .gitignore)
+    CLI-->>D: ✅ Backend created!
+```
+
 ## Usage
 
 ```bash

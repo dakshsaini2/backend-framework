@@ -2,6 +2,28 @@
 
 Production-ready backend infrastructure for Node.js/Express applications.
 
+## Architecture
+
+```mermaid
+flowchart LR
+    Request["Incoming Request"]
+    Auth["authenticate()"]
+    Role["authorize('ROLE')"]
+    Validate["validate(Schema)"]
+    Handler["asyncHandler()"]
+    Error["errorHandler()"]
+
+    Request --> Auth
+    Auth -->|Valid JWT| Role
+    Role -->|Authorized| Validate
+    Validate -->|Valid Body| Handler
+    
+    Auth -.->|Invalid| Error
+    Role -.->|Denied| Error
+    Validate -.->|Invalid| Error
+    Handler -.->|Exception| Error
+```
+
 ## Features
 
 - 🔐 **JWT Authentication** — Generate and verify access/refresh tokens
