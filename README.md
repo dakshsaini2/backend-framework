@@ -21,7 +21,7 @@ Instead of repeatedly implementing authentication, JWT handling, password hashin
 npx create-dk-backend my-api
 ```
 
-The framework is organized as an npm-workspaces monorepo containing two packages:
+The framework is organized as an npm-workspaces monorepo containing two packages: 
 
 | Package                      | Purpose                             |
 | ---------------------------- | ----------------------------------- |
