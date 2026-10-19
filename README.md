@@ -7,7 +7,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-> Build production-ready Node.js backends in seconds instead of starting from scratch.
+> Build production-ready Node.js backends in seconds instead of starting from scratch. 
 
 ---
 
