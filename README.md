@@ -1,5 +1,5 @@
 # 🚀 Backend Framework 
-### Production-ready TypeScript backend infrastructure with authentication, authorization, validation, Prisma, PostgreSQL, security, and CLI scaffolding.
+### Production-ready TypeScript backend infrastructure with authentication, authorization, validation, Prisma, PostgreSQL, security, and CLI scaffolding. 
 
 [![Core NPM](https://img.shields.io/npm/v/@devsaini2300/backend-core?label=backend-core\&color=red)](https://www.npmjs.com/package/@devsaini2300/backend-core)
 [![CLI NPM](https://img.shields.io/npm/v/create-dk-backend?label=create-dk-backend\&color=red)](https://www.npmjs.com/package/create-dk-backend)
